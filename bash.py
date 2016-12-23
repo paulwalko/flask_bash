@@ -16,7 +16,8 @@ def show_entries():
     for i in range(len(files)):
         files[i] = files[i].replace('.txt', '')
         files[i] = int(files[i])
-    files.sort()
+
+    files.sort(reverse=True)
     for i in range(len(files)):
         files[i] = ''.join([str(files[i]), '.txt'])
     
@@ -32,7 +33,7 @@ def show_entries():
             line = line.replace('<', '&lt;')
             line = line.replace('>', '&gt;')
 
-    return render_template('show_entries.html', entries=files_contents, i=range(len(files_contents)))
+    return render_template('show_entries.html', length=len(files_contents), entries=files_contents, i=range(len(files_contents)))
 
 if __name__ == "__main__":
     app.run()
