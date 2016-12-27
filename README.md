@@ -15,3 +15,5 @@ python bash.py
 Example:
 
 https://paul.walko.org/bash
+
+![example](bash.png)
