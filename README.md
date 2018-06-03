@@ -14,6 +14,6 @@ python bash.py
 
 Example:
 
-https://paul.walko.org/bash
+https://bash.vtluug.org
 
 ![example](bash.png)
